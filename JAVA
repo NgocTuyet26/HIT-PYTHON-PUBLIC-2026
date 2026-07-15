@@ -1,0 +1,6 @@
+public class bai.JAVA {
+    public static void main ( String[] args){
+        System.out.println(" hello java");
+        System.out.println(12345);
+    }
+}
