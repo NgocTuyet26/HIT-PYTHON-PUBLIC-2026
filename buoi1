@@ -1,1 +1,44 @@
-print ( "hello word" )
+Câu 1 
+- Python là ngôn ngữ thông dịch 
+- Giải thích :
+     Python không biên dịch trực tiếp thành mã máy như C hoặc C++.
+     Khi chạy chương trình, mã nguồn (`.py`) sẽ được chuyển thành **bytecode** (`.pyc`).
+     Bytecode sau đó được **Python Virtual Machine (PVM)** thông dịch và thực thi.
+    Vì vậy, Python được xem là ngôn ngữ thông dịch, mặc dù bên trong vẫn có bước biên dịch sang bytecode.
+- Ưu điểm:
+ Dễ học và dễ sử dụng.
+ Chạy được trên nhiều hệ điều hành.
+ Không cần biên dịch thủ công trước khi chạy.
+ Dễ kiểm tra và sửa lỗi.
+
+ Câu 2 : 
+ 
+1. Các kiểu dữ liệu trong Python
+Python có 5 nhóm kiểu dữ liệu cơ bản thường dùng:
+- Số: int (số nguyên: 5), float (số thực: 3.14).
+- Chuỗi ký tự: str (chữ viết: "Hello").
+- Danh sách: list (thay đổi được: [1, 2, 3]), tuple (không thể sửa: (1, 2, 3)).
+- Tập hợp: set (các phần tử không trùng lặp: {1, 2, 3}).
+- Từ điển: dict (cặp khóa-giá trị: {"ten": "An", "tuoi": 18}).
+
+2. Các toán tử trong Python
+- Số học: +, -, *, / (chia số thực), // (chia lấy nguyên), % (chia lấy dư),**  (mũ).
+- So sánh: == (bằng), != (khác), >, <, >=, <=.
+- Logic : and (và), or (hoặc), not (phủ định).
+- Gán: =, +=, -=, *=, /=.
+
+3. 
+- Mệnh đề điều kiện (if - elif - else): Dùng để kiểm tra điều kiện và rẽ nhánh chương trình.
+   if
+   if...else..
+   if...elif...else
+- Vòng lặp (for và while): Dùng để lặp lại một đoạn code.
+for: Lặp với số lần biết trước (duyệt qua list, chuỗi, hoặc một khoảng range()).
+while: Lặp liên tục khi điều kiện còn đúng.
+- Các lệnh bổ trợ
+break: Thoát khỏi vòng lặp.
+continue: Bỏ qua lần lặp hiện tại.
+pass: Không thực hiện gì.
+
+4. Kiểu dữ liệu True, False (Boolean)
+Là kiểu dữ liệu logic (bool), chỉ nhận một trong hai giá trị: True (Đúng) hoặc False (Sai).
