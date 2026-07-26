@@ -11,7 +11,7 @@ for i in range(n):
     expense = (name, price, category)
     expenses.append(expense)
 
-print("\nDanh sach khoan chi:")
+print("Danh sach khoan chi:")
 for expense in expenses:
     print(expense)
 
@@ -19,10 +19,9 @@ total = 0
 for expense in expenses:
     total += expense[1]
 
-print("\nTong chi tieu:", total, "VND")
+print("Tong chi tieu:", total, "VND")
 
-# Thống kê theo danh mục
-print("\nThong ke theo danh muc:")
+print("Thong ke theo danh muc:")
 
 categories = set()
 for expense in expenses:
