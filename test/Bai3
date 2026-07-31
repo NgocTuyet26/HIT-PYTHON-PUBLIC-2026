@@ -1,32 +1,33 @@
-from operator import index
-import string
+chuoi = input("Nhập chuỗi: ")
 
+def tim_chuoi(chuoi):
+    chuoi_moi = chuoi.split()
 
-chuoi = []
-chuoi = string(input("Nhập chuỗi: "))
-chuoi_moi = chuoi.copy()
-chuoi_moi = chuoi.capitalize().split()
-def tim_chuoi(chuoi_moi):
     index = []
-    for i in range (len(chuoi_moi)):
-        if chuoi_moi [i] == "Python":
+    for i in range(len(chuoi_moi)):
+        if chuoi_moi[i] == "Python":
             index.append(i)
-    return index
-    
-    index1 = []
+
+    if len(index) > 0:
+        return index
+
     chuoi_moi1 = chuoi.lower().split()
-    for i in range (len(chuoi_moi1)):
-        if chuoi_moi1 [i] == "python":
+    index1 = []
+    for i in range(len(chuoi_moi1)):
+        if chuoi_moi1[i] == "python":
             index1.append(i)
-    return -1
 
-    if len(index) == 0 and len(index1) == 0:
-        return 0
-    
+    if len(index1) > 0:
+        return -1
 
-if tim_chuoi(chuoi_moi) == 0:
+    return 0
+
+
+ket_qua = tim_chuoi(chuoi)
+
+if ket_qua == 0:
     print(0)
-elif tim_chuoi(chuoi_moi) == -1:
+elif ket_qua == -1:
     print(-1)
-else :
-    print("Chuỗi 'Python' xuất hiện trong chuỗi đã nhập",index,"lần, tại các vị trí:",tim_chuoi(chuoi_moi))
+else:
+    print("Chuỗi 'Python' xuất hiện", len(ket_qua), "lần, tại các vị trí:", ket_qua)
